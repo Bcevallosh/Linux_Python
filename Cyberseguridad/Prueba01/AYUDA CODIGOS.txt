@@ -1,0 +1,27 @@
+---------------------Crear activar y desactivar en LINUX MANJARO---------------------
+vitualenv env
+source venv/bin/activate
+deactivate
+---------------------Crear activar y desactivar en WINDOWS---------------------
+
+python -m venv env  
+env\Scripts\activate
+deactivate
+--------------------CONSULTAR E INSTALAR LIBRERIAS LIBRERIAS-----------------------------
+pip freeze
+pip install matplotlip
+pip install pandas
+
+---------------CLONAR UN REPOSITIRIO Y ACTUALIZAR UN ARCHIVO---------
+
+git clone ---------------- enlace del repositorio
+git pull
+gid log
+git add ejemplo.py
+git commit -m "------------"
+git push
+---------------------------------------------------------------------
+git add ejemplo.py
+git log
+git commit -m "mi modificada"
+git push
