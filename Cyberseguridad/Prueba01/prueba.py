@@ -1,11 +1,15 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+#Creamos una carpeta para guardar los fraficos
 carpeta_imagenes = 'graficos'
 if not os.path.exists(carpeta_imagenes):
     os.makedirs(carpeta_imagenes)
-csv=pd.read_csv('EjemplosU.csv.csv')
 
+#Leemos el archivo  CSV
+csv=pd.read_csv('Ejemplos.csv')
+
+#Llamamos a los datos del archivo que queremos graficar
 dataframe=pd.DataFrame(csv)
 pais=dataframe["PAIS"].value_counts("PRESUPUESTO DEVENGADO").head(10)
 region=dataframe["REGION"].value_counts("PRESUPUESTO \nCODIFICADO 2024")
